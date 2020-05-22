@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap");
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+main {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  background-color: #ffffff;
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form {
+  height: 100%;
+  width: 100%;
+  padding: 30px 40px;
+}
+.form p {
+  color: #7e7a9a;
+  text-align: left;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 10% 0 15% 0;
+}
+.logowrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.logowrap img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: auto;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  width: 55%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.right h3 {
+  font-size: 2.12em;
+  padding: 25px;
+  color: #3f3d4d;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.right p {
+  font-size: 1.4em;
+  color: #646376;
+  text-align: center;
+}
+
+.laptop_image {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.laptop_image img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: auto;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-control input {
+  display: block;
+  border: none;
+  padding: 10px;
+  color: #7e7a9a;
+  border-bottom: 1px solid #f2f1f6;
+  outline: none;
+  width: 80%;
+  font-size: 0.99em;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 1;
+  visibility: hidden;
+}
+.form-control.error small {
+  visibility: visible;
+}
+
+.form .btn {
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.34em;
+  padding: 20px;
+  margin-left: 30px;
+  width: 77%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: block;
+}
+.form span {
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+}
+
+.form .login {
+  background-color: #3f3d4d;
+  border: 2px solid #3f3d4d;
+  color: #fff;
+}
+.form .forget_password {
+  background-color: #f1f0f5;
+  border: 2px solid #f1f0f5;
+  color: #fe2e54;
+}
+.forget_password a {
+  color: #fe2e54;
+}
